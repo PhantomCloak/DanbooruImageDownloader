@@ -45,14 +45,16 @@ Full example command that uses proxy
 ## Download
 <br/>
 
-### For Linux [Here](http://github.com)
+### For Linux [Here](https://github.com/PhantomCloak/DanbooruImageDownloader/releases/download/1.0/linux-x64.zip)
 <br/>
 
-### For Windows [Here](http://github.com)
+### For Windows [Here](https://github.com/PhantomCloak/DanbooruImageDownloader/releases/download/1.0/windows-x64.zip)
 <br/>
 
-### For MacOS [Here](http://github.com)
+### For Windows (Easy one) [Here](https://github.com/PhantomCloak/DanbooruImageDownloader/releases/download/1.0/windows-interactive.zip)
+<br/>
 
+### For MacOS [Here](https://github.com/PhantomCloak/DanbooruImageDownloader/releases/download/1.0/osx-x64.zip)
 <br/>
 
 ## Build from source
