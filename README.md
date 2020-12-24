@@ -39,7 +39,6 @@ Full example command that uses proxy
 
 ```
 ./DanbooruImageDownloader --tag hatsune_miku --page-limit 1 --save-path ../img --proxy-address http://0.0.0.:65233 --proxy-username foo --proxy-password bar
-
 ```
 <br/>
 
