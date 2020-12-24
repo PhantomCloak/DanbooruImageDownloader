@@ -82,4 +82,7 @@ dotnet build
 ### Build Dependencies
 - .NET Core 3.1.403 SDK
 
+<br/>
 
+## Known Issues
+- Progress bar sometimes can show the wrong percentage although it's just a visual bug
