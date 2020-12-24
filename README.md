@@ -9,7 +9,7 @@ Example command that downloads images tagged with hatsune miku
 ```
 ./DanbooruImageDownloader --tag hatsune_miku --page-limit 1
 ```
-### **For windows users that doesn't want to do magic tricks**
+### **For Windows users who don't want to do magic tricks**
 Download the interactive version of the program under the Download section
 
 <br/>
