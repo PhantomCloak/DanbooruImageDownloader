@@ -9,6 +9,8 @@ Example command that downloads images tagged with hatsune miku
 ```
 ./DanbooruImageDownloader --tag hatsune_miku --page-limit 1
 ```
+### **For windows users that doesn't want to do magic tricks**
+Download the interactive version of the program under the Download section
 <br/>
 
 ### Essential commands
@@ -51,7 +53,7 @@ Full example command that uses proxy
 ### For Windows [Here](https://github.com/PhantomCloak/DanbooruImageDownloader/releases/download/1.0/windows-x64.zip)
 <br/>
 
-### For Windows (Easy one) [Here](https://github.com/PhantomCloak/DanbooruImageDownloader/releases/download/1.0/windows-interactive.zip)
+### For Windows (Interactive) [Here](https://github.com/PhantomCloak/DanbooruImageDownloader/releases/download/1.0/windows-interactive.zip)
 <br/>
 
 ### For MacOS [Here](https://github.com/PhantomCloak/DanbooruImageDownloader/releases/download/1.0/osx-x64.zip)
