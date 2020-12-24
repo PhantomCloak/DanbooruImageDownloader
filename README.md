@@ -5,7 +5,7 @@ Simple danbooru image downloader that allows you to download vast amount of imag
 ## How to use
 <br/>
 
-Example command that downloads images that tagged with hatsune miku 
+Example command that downloads images tagged with hatsune miku 
 ```
 ./DanbooruImageDownloader --tag hatsune_miku --page-limit 1
 ```
@@ -21,7 +21,7 @@ Example command that downloads images that tagged with hatsune miku
 <br/>
 
 
-### Extra commands
+### Optional commands
 <br/>
 
 `--save-path` - Save path for downloaded images 
