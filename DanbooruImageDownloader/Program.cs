@@ -87,6 +87,13 @@ namespace DanbooruImageDownloader
             }
 #endif
 
+            if (string.IsNullOrWhiteSpace(SavePath))
+            {
+                var savePath = Directory.GetCurrentDirectory();
+                Directory.CreateDirectory(savePath);
+                SavePath = savePath;
+            }
+
             for (int i = 1; i < PageLimit + 1; i++)
             {
                 var pageContent = GetPageHtmlContent(PostTag, i);
@@ -106,8 +113,8 @@ namespace DanbooruImageDownloader
 
         private static string GetPageHtmlContent(string tag, int pageNumber)
         {
-            var client = new WebClient{Proxy = GetProxy()};
-            
+            var client = new WebClient {Proxy = GetProxy()};
+
             string requestUrl = TemplateUrl.Replace("{page}", pageNumber.ToString());
             requestUrl = requestUrl.Replace("{tag}", tag);
 
@@ -120,7 +127,7 @@ namespace DanbooruImageDownloader
             {
                 return null;
             }
-            
+
             return new WebProxy
             {
                 Address = new Uri(ProxyServer),
@@ -239,29 +246,25 @@ namespace DanbooruImageDownloader
             Console.Write("Save path (empty for current directory): ");
             string path = Console.ReadLine();
 
-            if (string.IsNullOrWhiteSpace(path))
+            if (!string.IsNullOrEmpty(path))
             {
-                var savePath = Directory.GetCurrentDirectory();
-                Directory.CreateDirectory(savePath);
-                path =savePath;
+                if (!Directory.Exists(path))
+                {
+                    Console.WriteLine("Specified save path doesn't exist");
+                    return false;
+                }
+                
+                SavePath = path;
             }
-
-            if (!Directory.Exists(path))
-            {
-                Console.WriteLine("Specified save path doesn't exist");
-                return false;
-            }
-
-            SavePath = path;
 
             Console.Write("Download full-resolution image? (y/n): ");
             var compressed = Console.ReadLine();
-            
+
             if (compressed.ToLower() != "y")
             {
                 CompressedOnly = true;
             }
-            
+
             Console.Write("Use proxy? (y/n):");
             string answer = Console.ReadLine();
 
