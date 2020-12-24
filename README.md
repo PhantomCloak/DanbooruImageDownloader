@@ -11,6 +11,7 @@ Example command that downloads images tagged with hatsune miku
 ```
 ### **For windows users that doesn't want to do magic tricks**
 Download the interactive version of the program under the Download section
+
 <br/>
 
 ### Essential commands
