@@ -1,4 +1,4 @@
-﻿#define INTERACTIVE
+#define INTERACTIVE
 using System;
 using System.IO;
 using System.Linq;
@@ -241,8 +241,9 @@ namespace DanbooruImageDownloader
 
             if (string.IsNullOrWhiteSpace(path))
             {
-                Directory.CreateDirectory("../img");
-                path = "../img";
+                var savePath = Directory.GetCurrentDirectory();
+                Directory.CreateDirectory(savePath);
+                path =savePath;
             }
 
             if (!Directory.Exists(path))
@@ -260,7 +261,6 @@ namespace DanbooruImageDownloader
             {
                 CompressedOnly = true;
             }
-
             
             Console.Write("Use proxy? (y/n):");
             string answer = Console.ReadLine();
@@ -281,7 +281,6 @@ namespace DanbooruImageDownloader
             {
                 ProxyUsername = proxyUsername;
             }
-
 
             Console.Write("Proxy Password : ");
             string proxyPassword = Console.ReadLine();
