@@ -27,15 +27,15 @@ Download the interactive version of the program under the Download section
 ### Optional commands
 <br/>
 
-`--save-path` - Save path for downloaded images 
+`--save-path (filePath)` - Save path for downloaded images 
 
-`--proxy-address` - HTTP proxy address and port such as `http://0.0.0.0:80`
+`--proxy-address (address:port)` - HTTP proxy address and port such as `http://0.0.0.0:80`
 
-`--proxy-username` - Username for specified proxy if it exist
+`--proxy-username (userName)` - Username for specified proxy if it exist
 
-`--proxy-password` - Password for specified proxy if it exist 
+`--proxy-password (password)` - Password for specified proxy if it exist 
 
-`--compressed-only` - Does not attempt to download the original size of the scaled image
+`--compressed-only (true/false)` - Does not attempt to download the original size of the scaled image
 
 <br/>
 Full example command that uses proxy
